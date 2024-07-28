@@ -1,0 +1,646 @@
+/*  
+    COMP 1054 Main Project
+    Students: Marcos Mota, Annie Diaz, Armaandeep Singh, Helen Shrestha
+    Created on: 2024-07-24
+*/
+
+/* Style of the whole html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+}
+
+/* Style for the navbar and its components */
+nav {
+    background: white;
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.company-name {
+    color: #2c3e50;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.options {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.options a {
+    color: #2c3e50;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* font-family: 'Lobster', cursive; */
+}
+
+.options a:hover {
+    border-bottom: 2px solid #2c3e50;
+    color: red;
+}
+
+.donate-now-option {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.donate-now-text {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Style for the main */
+
+main {
+    flex: 1;
+    padding: 80px 20px 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the welcome content */
+
+.welcome {
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/MSF307227.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.donate-now-button {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.donate-now-button:hover {
+    background-color: rgb(200, 0, 0);
+    border: 2px solid white;
+}
+
+.volunteer-button {
+    
+    border-radius: 5px;
+    background-color: #ff4e4e;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.volunteer-button:hover {
+    background-color: #ce5555;
+    border: 2px solid white;
+}
+
+/* Achievements and projects */
+
+.achievements-and-projects {
+    margin: 0 auto;
+}
+
+.achievements-and-projects h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.achievements-and-projects-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.achievements {
+    background-color: #f4f4f4;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    margin: 10px;
+}
+
+.achievement {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.achievement:hover {
+    transform: scale(1.1);
+    color: #ff4e4e;
+}
+
+.achievement-number {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+}
+
+.projects {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    margin: 10px;
+   
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.project-texts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.project-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    color: #ff4e4e;
+}
+
+.services-intro {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.services-intro h1 {
+    font-size: 2.5em;
+}
+
+
+.get-involved {
+    height: 220px;
+    background-color: #f4f4f4;
+}
+
+.get-involved h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.get-involved p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+
+/* Style for the images and texts */
+
+.content {
+    margin: 0 auto;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.content-item img {
+    width: 600px;
+    height: auto;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.content-item img:hover {
+    transform: scale(1.1);
+}
+
+.content-text {
+    margin: 0 30px;
+    width: 600px;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    margin-right: 10px;
+}
+
+.input-box {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-button:hover {
+    background-color: #2ecc71;
+}
+
+/* Get in touch and form */
+
+.get-in-touch {
+    margin: 0 auto;
+}
+
+.get-in-touch h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.get-in-touch form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    padding: 30px 140px;
+    border-radius: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#message {
+    min-width: 570px;
+}
+
+.submit-button {
+    background-color: #ff4e4e;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 20px 40px;
+}
+
+
+.submit-button:hover {
+    border-bottom: 2px solid #2c3e50;
+}
+
+
+/* 
+.get-in-touch {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.get-in-touch h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.get-in-touch form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+} */
+
+
+/* Style for the footer */
+
+footer {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.company-name-footer {
+    color: #2c3e50;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.footer-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.footer-address p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.footer-donate .donate-button {
+    background-color: #ff4e4e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links a:hover {
+    border-bottom: 2px solid #2c3e50;
+    color: red;
+}
+
+.footer-links p {
+    margin: 5px 0 0 0;
+}
+
+.footer-newsletter p {
+    font-size: 0.9em;
+}
+
+.footer-newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-newsletter input[type="text"],
+.footer-newsletter input[type="email"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subscribe-button {
+    background-color: #ff4e4e;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    border-bottom: 2px solid #2c3e50;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: auto;
+}
+
+/* About page style */
+.about-content {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.about-content p {
+    margin: 0 0 10px 0;
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-content li {
+    margin-bottom: 5px;
+}
+
+.about-content a {
+    color: #00f;
+    text-decoration: none;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+.students-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.student-card {
+    background: #fff;
+    border-radius: 10px;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.student-card img {
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.student-info {
+    text-align: center;
+}
+
+.student-name,
+.student-id {
+    margin: 5px 0;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {}
