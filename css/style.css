@@ -676,6 +676,11 @@ footer {
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+    transform: scale(1.3);
 }
 
 .student-card img {
@@ -1010,6 +1015,10 @@ footer {
         padding: 10px;
     }
 
+    .contact-form form {
+        padding: 10px;
+    }
+
     #message {
         min-width: 0;
     }
@@ -1020,6 +1029,10 @@ footer {
 
     .map iframe {
         width: 100%;
+    }
+
+    .company-name {
+        font-size: 1em;
     }
 
     .options {
@@ -1054,6 +1067,14 @@ footer {
 
     .footer-newsletter {
         margin-bottom: 20px;
+    }
+
+    .footer-newsletter form {
+        flex-direction: column;
+    }
+
+    .footer-newsletter input {
+        margin-bottom: 10px;
     }
 
 }
