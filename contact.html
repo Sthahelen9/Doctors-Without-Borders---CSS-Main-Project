@@ -48,55 +48,74 @@
                 <a class="donate-now-option" href="donate.html"><span class="donate-now-text">&nbsp;Donate
                         Now</span></a>
             </div>
+            <div class="menu-toggle">
+                <span id="menu-icon" class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="overlay-menu">
+                <!-- Menu options -->
+                <a class="first" href="index.html"><span class="material-symbols-outlined">home</span>&nbsp;Home</a>
+                <a href="services.html"><span
+                        class="material-symbols-outlined">medical_services</span>&nbsp;Services</a>
+                <a href="contact.html"><span class="material-symbols-outlined">call</span>&nbsp;Contact</a>
+                <a href="about.html"><span class="material-symbols-outlined">info</span>&nbsp;About</a>
+                <a class="donate-now-option" href="donate.html"><span class="donate-now-text">&nbsp;Donate
+                        Now</span></a>
+            </div>
         </nav>
     </header>
     <main>
         <!-- Introduction Section -->
         <section class="contact-intro">
-            <h1>Contact Us</h1>
+            <h2>Contact us</h2>
             <p>We'd love to hear from you. Please fill out the form below or reach us using the contact information
                 provided.</p>
         </section>
 
         <!-- Contact Form -->
         <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="submit_form.php" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <h2>Send us a message</h2>
+            <form action="submission-received.html" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="form-row">
+                    <div class="form-group message-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Submit</button>
+                <button type="submit" class="submit-button">Send</button>
             </form>
         </section>
 
         <!-- Contact Information -->
         <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 1234 Medical Drive, City, Country</p>
-            <p><strong>Phone:</strong> 123-456-7890</p>
+            <h2>Contact information</h2>
+            <p><strong>Address:</strong> 40 Rector St., 16th Floor, New York, NY 10006</p>
+            <p><strong>Phone:</strong> +1 212.679.6800</p>
+            <p><strong>Fax:</strong> +1 212.679.7016</p>
             <p><strong>Email:</strong> info@doctorswithoutborders.org</p>
             <p><strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
         </section>
 
-        <!-- Map Section (Optional) -->
+        <!-- Map Section -->
         <section class="map">
-            <h2>Find Us Here</h2>
+            <h2>Find us here</h2>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345084036!2d-122.42067988468106!3d37.77492977975854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858154e8f59c1f%3A0x4b0e77e891e25f4!2s1234%20Medical%20Drive%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2s!4v1603664154269!5m2!1sen!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.4280754892347!2d-74.01749592260028!3d40.70859197139429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af910cabc7%3A0x4b84319da2a1ef21!2sDoctors%20Without%20Borders!5e0!3m2!1spt-BR!2sca!4v1722379857100!5m2!1spt-BR!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <!-- Page-level footer -->
@@ -116,29 +135,37 @@
                 <a class="donate-now-button" href="donate.html"><span class="donate-now-text">&nbsp;Donate
                         Now</span></a>
             </div>
-            <div class="footer-links">
-                <a href="index.html">&nbsp;Home</a>
-                <a href="services.html">&nbsp;Services</a>
-                <a href="contact.html">&nbsp;Contact</a>
-                <a href="about.html">&nbsp;About</a>
+            <div class="footer-center">
+                <div class="footer-links">
+                    <a href="index.html">&nbsp;Home</a>
+                    <a href="services.html">&nbsp;Services</a>
+                    <a href="contact.html">&nbsp;Contact</a>
+                    <a href="about.html">&nbsp;About</a>
+                </div>
                 <p>&copy; Doctors Without Borders 2024</p>
             </div>
             <div class="footer-newsletter">
                 <p>Get our news</p>
-                <form action="subscribe.php" method="post">
+                <form action="submission-received.html" method="post">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <button type="submit" class="subscribe-button">Sign Up</button>
                 </form>
             </div>
-            <div class="footer-social">
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/doctorswithoutborders"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/doctorswithoutborders"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/m-decins-sans-fronti-res-msf-"><img src="images/linkedin.png" alt="LinkedIn"></a>
             </div>
         </div>
     </footer>
-
+    <script>
+        // Add an event to the click button in order to open the menu on small screens
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            this.classList.toggle('open');
+            document.querySelector('.overlay-menu').classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>

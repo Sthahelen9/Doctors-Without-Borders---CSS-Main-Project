@@ -64,112 +64,75 @@
         </nav>
     </header>
     <main>
-        <!-- Page-level main content -->
-        <section class="welcome">
-            <div class="welcome-text">
-                <h1>Helping people in great need since 1971</h1>
-                <p>Ready to be part of this chain of good?</p>
-                <a class="donate-now-button" href="donate.html"><span class="donate-now-text">&nbsp;Donate
-                        Now</span></a>
-                <a class="volunteer-button" href="vonlunteer.html"><span
-                        class="volunteer-now-text">&nbsp;Volunteer</span></a>
-            </div>
+        <section class="volunteer-intro">
+            <h1>Join us as a volunteer</h1>
+            <p>Your skills and dedication can make a huge difference. Become a part of our mission to provide medical care to those in need.</p>
         </section>
-        <section class="content">
-            <h2>About us</h2>
-            <div class="content-item">
-                <div class="content-text">
-                    <p>Doctors Without Borders is an international medical humanitarian organization that provides aid
-                        to people in need, regardless of their race, religion, or political affiliation. Since 1971, we
-                        have been delivering emergency medical aid to those affected by conflict, epidemics, disasters,
-                        or exclusion from healthcare.</p>
-                    <p><strong>Our Mission:</strong> To save lives and alleviate suffering by providing medical care
-                        where it is needed most.</p>
-                </div>
-                <img src="images/MSF163911(High)_0.jpg" alt="Doctors without borders image">
-            </div>
-        </section>
-        <section class="achievements-and-projects">
-            <h2>Our achievements and impact</h2>
-            <div class="achievements-and-projects-item">
-                <div class="achievements">
-                    <div class="achievement">
-                        <span class="achievement-number">70+</span>
-                        <span class="achievement-title">Countries reached</span>
-                    </div>
-                    <div class="achievement">
-                        <span class="achievement-number">10,000,000+</span>
-                        <span class="achievement-title">Patients treated</span>
-                    </div>
-                    <div class="achievement">
-                        <span class="achievement-number">45,000+</span>
-                        <span class="achievement-title">Staff members</span>
-                    </div>
-                    <div class="achievement">
-                        <span class="achievement-number">€2.37 billions</span>
-                        <span class="achievement-title">Raised from donations in 2023</span>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="project">
-                        <img src="images/conflict_response.jpg" alt="Doctors without borders image">
-                        <div class="project-texts">
-                            <span class="project-title">Conflict Response</span>
-                            <span class="project-description">Medical care in conflict zones like Syria and
-                                Yemen.</span>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="images/epidemic_control.jpg" alt="Doctors without borders image">
-                        <div class="project-texts">
-                            <span class="project-title">Epidemic Control</span>
-                            <span class="project-description">Combating epidemics like Ebola in West Africa.</span>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="images/natural_disasters.jpg" alt="Doctors without borders image">
-                        <div class="project-texts">
-                            <span class="project-title">Natural Disasters</span>
-                            <span class="project-description">Medical assistance after natural disasters like
-                                earthquakes in Haiti.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="index-video">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/okrkVJRfOuk?si=ZzWG1YVV_8WnhlXu"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-        <section class="get-in-touch">
-            <h2>Get in touch</h2>
+        
+        <section class="volunteer-form">
+            <h2>Volunteer application</h2>
             <form action="submission-received.html" method="post">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group message-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
                     </div>
                 </div>
-                <button type="submit" class="submit-button">Send</button>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Availability</label>
+                    <div class="form-group">
+                        <input type="radio" id="full-time" name="availability" value="full-time" required>
+                        <label for="full-time">Full-Time</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="part-time" name="availability" value="part-time">
+                        <label for="part-time">Part-Time</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Areas of Interest</label>
+                    <div class="form-group">
+                        <input type="checkbox" id="medical" name="interest" value="medical">
+                        <label for="medical">Medical</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="logistics" name="interest" value="logistics">
+                        <label for="logistics">Logistics</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="administration" name="interest" value="administration">
+                        <label for="administration">Administration</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="other" name="interest" value="other">
+                        <label for="other">Other</label>
+                        <input type="text" id="other-interest" name="other-interest" placeholder="Specify your interest">
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Apply Now</button>
             </form>
         </section>
-    </main>
+    </main>    
     <!-- Page-level footer -->
     <footer>
         <div class="footer-container">
@@ -205,12 +168,9 @@
                 </form>
             </div>
             <div class="footer-right">
-                <a href="https://www.facebook.com/doctorswithoutborders"><img src="images/facebook.png"
-                        alt="Facebook"></a>
-                <a href="https://www.instagram.com/doctorswithoutborders"><img src="images/instagram.png"
-                        alt="Instagram"></a>
-                <a href="https://www.linkedin.com/company/m-decins-sans-fronti-res-msf-"><img src="images/linkedin.png"
-                        alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/doctorswithoutborders"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/doctorswithoutborders"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/m-decins-sans-fronti-res-msf-"><img src="images/linkedin.png" alt="LinkedIn"></a>
             </div>
         </div>
     </footer>
@@ -221,6 +181,7 @@
             document.querySelector('.overlay-menu').classList.toggle('open');
         });
     </script>
+    <!-- Add the javascript file that has some scripts -->
+    <script src="scripts/volunteer-scripts.js"></script>
 </body>
-
 </html>

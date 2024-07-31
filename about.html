@@ -48,11 +48,24 @@
                 <a class="donate-now-option" href="donate.html"><span class="donate-now-text">&nbsp;Donate
                         Now</span></a>
             </div>
+            <div class="menu-toggle">
+                <span id="menu-icon" class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="overlay-menu">
+                <!-- Menu options -->
+                <a class="first" href="index.html"><span class="material-symbols-outlined">home</span>&nbsp;Home</a>
+                <a href="services.html"><span
+                        class="material-symbols-outlined">medical_services</span>&nbsp;Services</a>
+                <a href="contact.html"><span class="material-symbols-outlined">call</span>&nbsp;Contact</a>
+                <a href="about.html"><span class="material-symbols-outlined">info</span>&nbsp;About</a>
+                <a class="donate-now-option" href="donate.html"><span class="donate-now-text">&nbsp;Donate
+                        Now</span></a>
+            </div>
         </nav>
     </header>
     <main>
         <div class="about-content">
-            <p>This is a website for an assignment and only for learning purposes.</p>
+            <p>This is a website for an assignment and only for learning purposes. All copyrights are reserved to <a href="https://www.doctorswithoutborders.org/" title="doctors without borders">Doctors Without Borders</a>.</p>
             <br>
             <p>Assignment detail: COMP 1054 Main Project</p>
             <p>GitHub repository: <a href="https://github.com/marcosmota5/Doctors-Without-Borders---CSS-Main-Project" title="GitHub Repository">Doctors Without Borders GitHub Repository</a></p>
@@ -88,7 +101,7 @@
                     </div>
                 </div>
                 <div class="student-card">
-                    <img src="images/sukhwinder-kaur.jpg" alt="Student Picture">
+                    <img src="images/student.png" alt="Student Picture">
                     <div class="student-card-content">
                         <h3>Helen Shrestha</h3>
                         <p class="student-id">Id: </p>
@@ -106,11 +119,17 @@
                 <li><a href="wireframes/MainProject_WireFrame_About.png" title="Wireframe for about page">About page</a></li>
             </ul>
             <br>
+            <br>
+            <p>A huge thanks to <a href="https://www.doctorswithoutborders.org/" title="doctors without borders">Doctors Without Borders</a> for all pictures, descriptions and amazing work for the entire society</p>
+            <br>
+            <br>
             <p>Thanks to the creators of the following images:</p>
             <ul>
-                <li><a href="https://www.flaticon.com/free-icons/browser" title="browser icons">Browser icons created by Freepik - Flaticon</a></li>
-                <li><a href="https://www.flaticon.com/free-icons/8-bit" title="8 bit icons">8 bit icons created by Freepik - Flaticon</a></li>
-                <li><a href="https://wallpaperaccess.com/8-bit-gif" title="8 bit gif">8 bit gif by Wallpaper Access</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/doc" title="doc icons">Doc icons created by dmitri13 - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Arkinasi - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Pixel perfect - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Pixel perfect - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a></li>
             </ul>
   
         </div>
@@ -132,29 +151,37 @@
                 <a class="donate-now-button" href="donate.html"><span class="donate-now-text">&nbsp;Donate
                         Now</span></a>
             </div>
-            <div class="footer-links">
-                <a href="index.html">&nbsp;Home</a>
-                <a href="services.html">&nbsp;Services</a>
-                <a href="contact.html">&nbsp;Contact</a>
-                <a href="about.html">&nbsp;About</a>
+            <div class="footer-center">
+                <div class="footer-links">
+                    <a href="index.html">&nbsp;Home</a>
+                    <a href="services.html">&nbsp;Services</a>
+                    <a href="contact.html">&nbsp;Contact</a>
+                    <a href="about.html">&nbsp;About</a>
+                </div>
                 <p>&copy; Doctors Without Borders 2024</p>
             </div>
             <div class="footer-newsletter">
                 <p>Get our news</p>
-                <form action="subscribe.php" method="post">
+                <form action="submission-received.html" method="post">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <button type="submit" class="subscribe-button">Sign Up</button>
                 </form>
             </div>
-            <div class="footer-social">
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/doctorswithoutborders"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/doctorswithoutborders"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/m-decins-sans-fronti-res-msf-"><img src="images/linkedin.png" alt="LinkedIn"></a>
             </div>
         </div>
     </footer>
-
+    <script>
+        // Add an event to the click button in order to open the menu on small screens
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            this.classList.toggle('open');
+            document.querySelector('.overlay-menu').classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>
